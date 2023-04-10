@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Santana</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS DEFAULT -->
     <link rel="stylesheet" href="assets/style/default.css" media="all">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- CSS INDEX -->
     <link rel="stylesheet" href="assets/style/media-queries-index.css">
 </head>
 <body>
     <header>
         <h1>Nycolas</h1>
         <h2>Desenvolvedor Web<span></span></h2>
-        <button onclick="nav()"><i class='bx bx-menu'></i></button>
-        <nav id="navg">
-            <a href="#"><div class="links"><i class='bx bxs-home-alt-2'></i> Incio</div></a>
-            <br>
-            <a href="#"><div class="links"><i class='bx bxs-briefcase'></i> Projetos</div></a>
-            <br>
-            <a href="#"><div class="links"><i class='bx bx-book-bookmark'></i> Formações</div></a>
-            <br>
+        <button onclick="nav()" class="btn btn-primary fs-1 btn-navbar"><i class='bx bx-menu'></i></button>
+        
+        <nav class="tracking-in-contract-bck-top links-navbar" id="nav-hamb">
+            <div class="links"><a href="#"><i class='bx bxs-home-alt-2'></i> Incio</a></div>
+            <div class="links"><a href="#"><i class='bx bxs-home-alt-2'></i> Projetos</a></div>
+            <div class="links"><a href="#"><i class='bx bxs-home-alt-2'></i> Formações</a></div>
         </nav>
     </header>
     <br>
