@@ -23,19 +23,54 @@
     <header>
         <h1>Nycolas</h1>
         <h2>Desenvolvedor Web<span></span></h2>
-        <button onclick="nav()" class="btn btn-primary fs-1 btn-navbar"><i class='bx bx-menu'></i></button>
+        <button onclick="nav()" class="btn btn-primary fs-1 mb-3 me-3 btn-navbar"><i class='bx bx-menu'></i></button>
         
         <nav class="tracking-in-contract-bck-top links-navbar" id="nav-hamb">
-            <div class="links"><a href="#"><i class='bx bxs-home-alt-2'></i> Incio</a></div>
-            <div class="links"><a href="#"><i class='bx bxs-home-alt-2'></i> Projetos</a></div>
-            <div class="links"><a href="#"><i class='bx bxs-home-alt-2'></i> Formações</a></div>
+            <div class="links"><a href="#home"><i class='bx bxs-home-alt-2'></i> Incio</a></div>
+            <div class="links"><a href="#projects"><i class='bx bx-code'></i> Projetos</a></div>
+            <div class="links"><a href="#"><i class='bx bx-book-bookmark'></i> Formações</a></div>
         </nav>
     </header>
     <br>
-    <hr>
     <main>
-        
+        <section class="container" id="home">
+            <div class="about-img">
+                <img src="assets/images/programmer-person.png" alt="Programmer Icon Person" width="50%" class="d-flex m-auto">
+            </div>
+            <div class="fw-medium" style="text-align: justify;">
+                <p>Olá meu nome é Nycolas e tenho 17 anos, começei a estudar T.I aos meus 13 anos de idade e gosto de desafios pois me sinto motivado e viciado em obter o sentimento de conquista, hoje em dia estudo desenvolvimento Web e sempre aprendendo coisas novas em vídeos, cursos, livros, documentações e em grupos de programação.</p>
+            </div>
+            <section class="contacts">
+                <ul type="none" class="d-flex">
+                    <a href="#" class="links-contacts fs-1 me-5"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="links-contacts fs-1 me-5"><i class='bx bxl-gmail'></i></a>
+                    <a href="#" class="links-contacts fs-1"><i class='bx bxl-linkedin-square'></i></a>
+                </ul>
+            </section>
+        </section>
+
+        <hr class="border border-primary border-3 opacity-75">
+
+        <section class="container" id="projects">
+            <h1 class="text-center">Projetos</h1>
+
+            <div class="d-flex">
+                <div class="card border border-0 m-1" style="width: 18rem;">
+                    <img src="assets/images/img-project-01.png" class="card-img-top" alt="project-login">
+                    <div class="card-body">
+                      <h5 class="card-title">Página de Login</h5>
+                      <p class="card-text">Desenvolvido utilizando as tecnologias HTML e CSS, sendo uma página de login não funcional.</p>
+                      <a href="https://nycolas-roberto.github.io/Projetos/login/" class="btn btn-primary" target="_blank">Visitar</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </section>
     </main>
+    
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
