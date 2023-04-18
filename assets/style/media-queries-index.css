@@ -1,3 +1,68 @@
+span#anim::before {
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+  content: "|";
+  animation: animate infinite 1s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+  0% {
+    content: "|";
+  }
+
+  50% {
+    content: "";
+  }
+
+  75% {
+    content: "|";
+  }
+}
+
+.tracking-in-contract-bck-top {
+  -webkit-animation: tracking-in-contract-bck-top 0.5s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck-top 0.5s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   header {
     background-color: aliceblue;
@@ -14,28 +79,11 @@
     font-weight: 100;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   }
-  span::before {
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-    font-weight: 100;
-    content: "|";
-    animation: animate infinite 1s;
-    padding-left: 10px;
-  }
+  
 
-  @keyframes animate {
-    0% {
-      content: "|";
-    }
-
-    50% {
-      content: "";
-    }
-
-    75% {
-      content: "|";
-    }
-  }
   .btn-navbar {
+    display: flex;
+    justify-content: space-between;
     float: right;
   }
 
@@ -59,45 +107,6 @@
     background-color: rgba(27, 27, 27, 0.8);
   }
 
-  .tracking-in-contract-bck-top {
-    -webkit-animation: tracking-in-contract-bck-top 0.5s
-      cubic-bezier(0.215, 0.61, 0.355, 1) both;
-    animation: tracking-in-contract-bck-top 0.5s
-      cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  }
-
-  @-webkit-keyframes tracking-in-contract-bck-top {
-    0% {
-      letter-spacing: 1em;
-      -webkit-transform: translateZ(400px) translateY(-300px);
-      transform: translateZ(400px) translateY(-300px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0) translateY(0);
-      transform: translateZ(0) translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-contract-bck-top {
-    0% {
-      letter-spacing: 1em;
-      -webkit-transform: translateZ(400px) translateY(-300px);
-      transform: translateZ(400px) translateY(-300px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0) translateY(0);
-      transform: translateZ(0) translateY(0);
-      opacity: 1;
-    }
-  }
   body {
     background-color: rgb(31, 31, 31);
   }
@@ -113,4 +122,68 @@
     color: rgb(210, 237, 255);
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(31,31,31);
+    color: white;
+  }
+  header h1 {
+    margin-left: 5vw;
+  }
+  #btn-navbarr {
+    display: none;
+  }
+  .links-navbar {
+    display: flex;
+  }
+  .links {
+    margin: 0px 20px;
+  }
+  .links a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: .2s;
+    transition-timing-function: ease;
+  }
+  .links a:hover {
+    color: rgb(198, 234, 255);
+  }
+  .links a:active {
+    color: rgb(255, 111, 67);
+  }
+  .desc-about {
+    margin: 0 auto;
+    width: 40vw;
+  }
+  .contacts {
+    display: flex;
+    justify-content: center;
+  }
+  .links-contacts {
+    color: white;
+    transition: .2s;
+    transition-timing-function: ease;
+  }
+  .links-contacts:hover {
+    color: rgb(255, 111, 67);
+  }
+  .links-contacts:active {
+    color: rgb(127, 168, 255);
+  }
 }
