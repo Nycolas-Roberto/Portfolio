@@ -186,4 +186,14 @@ span#anim::before {
   .links-contacts:active {
     color: rgb(127, 168, 255);
   }
+  .tecnologias {
+    width: 100px;
+    height: 100px;
+    filter: saturate(0%);
+    transition: .2s;
+    transition-timing-function: ease;
+  }
+  .tecnologias:hover {
+    filter: saturate(100%);
+  }
 }
