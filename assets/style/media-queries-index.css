@@ -236,6 +236,6 @@ span#anim::before {
     display: flex;
   }
   #formacoes,#contato-email {
-    width: 50%;
+    width: 50%  ;
   }
 }
