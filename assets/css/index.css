@@ -18,6 +18,11 @@ header {
     width: 100vw;
     z-index: 9999;
 }
+.links-navbar:hover {
+    transition: .3s;
+    background-color: rgb(211, 225, 255);
+}
+
 .titulo-navbar {
     letter-spacing: 5px;
 }
