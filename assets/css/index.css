@@ -116,6 +116,11 @@ header {
         background-color: #130030;
         border-radius: 10px 3px;
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.30);
+        transition: .2s;
+        transition-timing-function: ease;
+    }
+    .formacao:hover {
+        background-color: #130030c7;
     }
     .data-formacao {
         font-weight: 100;
@@ -206,7 +211,6 @@ header {
         font-weight: 100;
         letter-spacing: 2px;
     }
-
     #formacoes > h1{
         letter-spacing: 5px;
         text-align: center;
@@ -216,6 +220,11 @@ header {
         background-color: #130030;
         border-radius: 10px 3px;
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.30);
+        transition: .2s;
+        transition-timing-function: ease;
+    }
+    .formacao:hover {
+        background-color: #130030c7;
     }
     .data-formacao {
         font-weight: 100;
@@ -318,6 +327,11 @@ header {
         background-color: #130030;
         border-radius: 10px 3px;
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.30);
+        transition: .2s;
+        transition-timing-function: ease;
+    }
+    .formacao:hover {
+        background-color: #130030c7;
     }
     .data-formacao {
         font-weight: 100;
@@ -421,6 +435,11 @@ header {
         background-color: #130030;
         border-radius: 10px 3px;
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.30);
+        transition: .2s;
+        transition-timing-function: ease;
+    }
+    .formacao:hover {
+        background-color: #130030c7;
     }
     .data-formacao {
         font-weight: 100;
@@ -520,6 +539,11 @@ header {
         background-color: #130030;
         border-radius: 10px 3px;
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.30);
+        transition: .2s;
+        transition-timing-function: ease;
+    }
+    .formacao:hover {
+        background-color: #130030c7;
     }
     .data-formacao {
         font-weight: 100;

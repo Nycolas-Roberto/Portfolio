@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nycolas - Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/index.css" media="all">
+    <link rel="stylesheet" href="style/index.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand titulo-navbar" href="#"><img src="../../images/logo.png" alt="logo">
+                    PORTFÓLIO</a>
+                <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link link-animation m-2 rounded" aria-current="page" href="../../../index.html#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-animation m-2 rounded" href="../../../index.html#">PROJETOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-animation m-2 rounded" href="#contact">CONTATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-animation m-2 rounded" href="../../../index.html#formacoes">FORMAÇÕES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="p-5"></div>
+    <main>
+        <section class="p-5">
+            <h1 id="titulo">CERTIFICADOS CURSO EM VÍDEO</h1>
+            <h2 id="curso">HTML5 & CSS3</h2>
+        </section>
+        <section class="p-3 m-auto">
+            <section class="certificado m-auto mb-5">
+                <h3>Módulo 01</h3>
+                <img src="certificates/certificado-html5&css3-m1.png" alt="certificado módulo 01" class="certificado-img">
+                <h4>Código do certificado: 170B-C9E9-2</h4>
+            </section>
+            <section class="certificado m-auto mb-5">
+                <h3>Módulo 02</h3>
+                <img src="certificates/certificado-html5&css3-m2.png" alt="certificado módulo 02" class="certificado-img">
+                <h4>Código do certificado: 170B-E776-4</h4>
+            </section>
+            <section class="certificado m-auto mb-5">
+                <h3>Módulo 03</h3>
+                <img src="certificates/certificado-html5&css3-m3.png" alt="certificado módulo 03" class="certificado-img">
+                <h4>Código do certificado: 170B-15678-9</h4>
+            </section>
+            <section class="certificado m-auto mb-5">
+                <h3>Módulo 04</h3>
+                <img src="certificates/certificado-html5&css3-m4.png" alt="certificado módulo 04" class="certificado-img">
+                <h4>Código do certificado: 170B-26CB1-7</h4>
+            </section>
+        </section>
+    </main>
+    <div class="p-5"></div>
+    <footer id="contact">
+        <h1 class="fs-3 text-center mt-4" >CONTATO</h1>
+        <form action="https://formsubmit.co/nycolasrobertods17@gmail.com" class="contato g-3 needs-validation" method="POST" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">SEU NOME</label>
+                <input type="text" class="form-control" id="name" placeholder="Carlinhos">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">SEU EMAIL</label>
+                <input type="email" class="form-control" id="email" placeholder="carlinhos@dominio.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">ASSUNTO</label><br>
+                <textarea name="message" id="message" cols="30" rows="10" class="p-2" required>Olá gostaria de contratar você! [DIGITE SEU CONTATO AQUI!]</textarea>
+            </div>
+            <input type="hidden" name="_subject" value="!-----[TRABALHO] Você tem uma nova mensagem.">
+            <button class="btn btn-success">ENVIAR</button>
+        </form>
+        <div class="p-5"></div>
+    </footer>
+    
+</body>
+
+</html>
