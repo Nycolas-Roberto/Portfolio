@@ -1,0 +1,36 @@
+#titulo {
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#curso {
+    font-weight: 300;
+    color: rgb(127, 48, 255);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgb(190, 150, 255);
+}
+.certificado {
+    width: 70vw;
+}
+.certificado h3 {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+    .certificado h4 {
+        display: block;
+        font-weight: 100;
+    }
+}
+@media screen and (min-width: 769px) {
+    .certificado h4 {
+        display: none;
+    }
+}
+.certificado img {
+    width: 70vw;
+}
+.certificado-img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--sombra);
+}
