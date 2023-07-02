@@ -106,7 +106,9 @@ header {
         font-weight: 100;
         letter-spacing: 2px;
     }
-
+    #formacoes {
+        width: 80%;
+    }
     #formacoes > h1{
         letter-spacing: 5px;
         text-align: center;
@@ -210,6 +212,9 @@ header {
     #imgs-tech > h2 {
         font-weight: 100;
         letter-spacing: 2px;
+    }
+    #formacoes {
+        width: 80%;
     }
     #formacoes > h1{
         letter-spacing: 5px;
@@ -317,7 +322,9 @@ header {
         font-weight: 100;
         letter-spacing: 2px;
     }
-
+    #formacoes {
+        width: 80%;
+    }
     #formacoes > h1{
         letter-spacing: 5px;
         text-align: center;
@@ -425,7 +432,9 @@ header {
         font-weight: 100;
         letter-spacing: 2px;
     }
-
+    #formacoes {
+        width: 80%;
+    }
     #formacoes > h1{
         letter-spacing: 5px;
         text-align: center;
@@ -529,6 +538,9 @@ header {
     #imgs-tech > h2 {
         font-weight: 100;
         letter-spacing: 2px;
+    }
+    #formacoes {
+        width: 80%;
     }
     #formacoes > h1{
         letter-spacing: 5px;
