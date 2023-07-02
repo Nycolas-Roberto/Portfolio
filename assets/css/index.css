@@ -18,15 +18,33 @@ header {
     width: 100vw;
     z-index: 9999;
 }
-.links-navbar:hover {
-    transition: .3s;
-    background-color: rgb(211, 225, 255);
-}
 
 .titulo-navbar {
     letter-spacing: 5px;
 }
 
+
+
+.link-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.link-animation::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(77, 106, 235);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.link-animation:hover::after {
+    width: 100%;
+}
 
 
 
