@@ -11,8 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script> <!-- p5 js -->
-    <script src="assets/js/p5_animation.js"></script> <!-- p5 animation -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Box icons -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart js -->
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body {
             font-family: "Quicksand", sans-serif;
@@ -24,66 +27,190 @@
     </style>
 </head>
 <body>
+<script>AOS.init();</script>
     <header class="d-flex">
-        <div class="w-50">
-            <ul class="nav ms-4">
+        <div class="container-nav-links">
+            <ul class="nav ms-4 me-4">
                 <li class="nav-item">
-                  <a class="line-bottom link-navigation" aria-current="page" href="#">Home</a>
+                  <a class="line-bottom link-navigation" aria-current="page" href="#"><i class='bx  bx-home-alt-2'></i> Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="line-bottom link-navigation" href="#">Conhecimentos</a>
+                  <a class="line-bottom link-navigation" href="#"><i class='bx  bx-book-bookmark'></i> Conhecimentos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="line-bottom link-navigation" href="#">Meus projetos</a>
+                  <a class="line-bottom link-navigation" href="#"><i class='bx  bx-list-ol'></i>  Meus projetos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="line-bottom link-navigation" href="#">Contato</a>
+                    <a class="line-bottom link-navigation" href="#"><i class='bx  bx-at'></i> Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="line-bottom link-navigation" href="#">Serviços</a>
+                    <a class="line-bottom link-navigation" href="#"><i class="bx  bx-code"></i>Serviços</a>
                 </li>
             </ul>
         </div>
-        <div class="w-50 lang-select justify-content-end me-4">
-            <button title="Traduzir o site para Português Brasil :: Translate to Portuguese Brazil">PT-BR</button>
-            <button title="Translate to english :: Traduzir para Português Brasil">US</button>
+        <div class="container-btn-langs lang-select justify-content-end me-4">
+            <button title="Traduzir o site para Português Brasil :: Translate to Portuguese Brazil" class="p-1"><i class="bx  bx-message-detail"></i> PT-BR</button>
+            <button title="Translate to english :: Traduzir para Português Brasil" class="p-1"><i class="bx  bx-message-detail"></i> US</button>
         </div>
     </header>
     <main>
-        <section class="mt-5">
-            <div class="name-category d-flex">
-                <div class="w-50 ms-4"></div>
-                <div class="w-50">
+        <section class="ms-4 me-4 mt-5">
+            <div class="name-category d-flex" data-aos="fade-left" data-aos-duration="2000">
+                <div class="w-50"></div>
+                <div class="w-50 mt-5">
                     <h1 id="name-subtitle">NYCOLAS ROBERTO</h1>
                     <h2 id="developer-subtitle">DESENVOLVEDOR</h2>
-                    <h3 id="category-title"><i class='bx bx-code-alt'></i> front-end</h3>
+                    <h3 id="category-title"><i class='bx bx-code-alt'></i> full-stack</h3>
                 </div>
-            </div>
+            </div> <!-- Right div -->
 
 
-            <section class="about-me d-flex ms-4">
-                <div class="w-50 d-flex slide-in-left-5seconds">
-                    <div class="me-2" id="p5-visual01"></div>
-                    <div class="description">
-                        <h2><i class='bx bx-arrow-right-stroke'></i> SOBRE MIM</h2>
-                        <p title="Uma breve descrição sobre mim.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis sed voluptatem ipsum minus accusamus voluptatum. Ipsum animi maxime saepe commodi expedita dolor nisi architecto harum magnam! Delectus, sit suscipit.</p>
-                        <div class="social01">
-                            <a href="#" target="_blank" title="Minha principal rede social.">Instagram</a>
+            <section class="about-me d-flex" data-aos="fade-right"  data-aos-duration="2000">
+                <div class="w-50">
+                    <div class="d-flex">
+                        <div class="me-2" id="p5-visual01"></div>
+                        <div class="description">
+                            <h2>&#128518 SOBRE MIM</h2>
+                            <p title="Uma breve descrição sobre mim.">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis sed voluptatem ipsum minus accusamus voluptatum. Ipsum animi maxime saepe commodi expedita dolor nisi architecto harum magnam! Delectus, sit suscipit.</p>
+                            <div class="social01">
+                                <a href="#" target="_blank" title="Minha principal rede social.">Instagram</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- Left div -->
 
-                <div class="w-50 text-center">
+
+                <div class="w-50 text-center" data-aos="fade-right" data-aos-duration="2000">
                     <div class="social02 d-flex justify-content-between mb-5">
                         <button class="p-3" title="Uma plataforma onde posso hospedar/arquivar meus projetos.">Github</button>
                         <button class="p-3 me-4" title="Uma plataforma de freelancer.">Workana</button>
                     </div>
                     <a href="" target="_blank" title="Você descobriu o link oculto para o meu outro contato!"><img src="assets/images/developer.png" alt="developer image" class="developer-image"></a>
                 </div>
+            </section> <!-- Right div -->
+        </section>
 
+        <!-- Projects section -->
+        <section class="container-projects ms-4 mt-3 me-4">
+            <h1 data-aos="fade-right">PROJETOS</h1>
+            <div class="project mt-4 mb-4" data-aos="fade-right">
+                <div class="d-flex align-items-center">
+                    <img src="assets/images/developer.png" alt="project image" class="me-3">
+                    <div class="d-block">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad asperiores eius atque nesciunt quo delectus quae, dolor non commodi, perspiciatis animi explicabo. Ea molestias numquam eligendi distinctio libero quia accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ullam vitae porro velit quidem eum nobis vero perspiciatis labore dignissimos blanditiis, officiis, similique rem tempore eos, cumque nostrum odio nam!</p>
+                        <div class="d-flex ms-3">
+                            <span class="projects-technologies me-3 proj-tech-html">html</span>
+                            <span class="projects-technologies me-3 proj-tech-css">css</span>
+                            <span class="projects-technologies me-3 proj-tech-js">js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <button class="p-1 btn-repository">Repositório</button>
+                    <button class="p-1 btn-view-project">Visualizar</button>
+                </div>
+            </div>
 
+            <hr class="separator">
+
+            <div class="project mt-4 mb-4" data-aos="fade-left">
+                <div class="d-flex align-items-center">
+                    <div class="d-block">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad asperiores eius atque nesciunt quo delectus quae, dolor non commodi, perspiciatis animi explicabo. Ea molestias numquam eligendi distinctio libero quia accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ullam vitae porro velit quidem eum nobis vero perspiciatis labore dignissimos blanditiis, officiis, similique rem tempore eos, cumque nostrum odio nam!</p>
+                        <div class="d-flex ms-3 justify-content-end">
+                            <span class="projects-technologies me-3 proj-tech-html">html</span>
+                            <span class="projects-technologies me-3 proj-tech-css">css</span>
+                            <span class="projects-technologies me-3 proj-tech-js">js</span>
+                        </div>
+                    </div>
+                    <img src="assets/images/developer.png" alt="project image" class="ms-3">
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                    <button class="p-1 btn-view-project">Visualizar</button>
+                    <button class="p-1 btn-repository">Repositório</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-skills d-flex ms-4 me-4 mt-5">
+            <section class="w-50 me-2 division-skills">
+                <h3 data-aos="fade-right">Habilidades</h3>
+                <div class="m-auto">
+                    <canvas id="skillsRadar" data-aos="zoom-in" data-aos-duration="2000"></canvas>
+                </div>
+            </section>
+
+            <section class="w-50 text-end ms-2">
+                <h3 data-aos="fade-left">Tecnologias</h3>
+                <div class="m-auto">
+                    <canvas id="technologiesRadar" data-aos="zoom-in" data-aos-duration="2000"></canvas>
+                </div>
             </section>
         </section>
+
+        <section class="container-services ms-4 me-4 mb-5">
+            <h3>Serviços</h3>
+            <div class="d-flex">
+                <div class="w-50 service m-3 p-3" data-aos="flip-up">
+                    <h4>Freelancer</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquid laborum officiis voluptatum obcaecati eius maiores eum ipsa possimus voluptatibus, libero a, sed incidunt dolorem animi ipsum vel. Dignissimos, quaerat.</p>
+                </div>
+                <div class="w-50 service m-3 p-3" data-aos="flip-up">
+                    <h4>SaaS</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ea repudiandae provident omnis obcaecati perferendis, commodi delectus quod voluptatem consequuntur optio aliquid ipsa odit vel facere maxime dolores atque officia.
+                </div>
+                <div class="w-50 service m-3 p-3" data-aos="flip-up">
+                    <h4>White Label</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ea repudiandae provident omnis obcaecati perferendis, commodi delectus quod voluptatem consequuntur optio aliquid ipsa odit vel facere maxime dolores atque officia.
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="d-flex mt-5" data-aos="fade-up">
+        <div class="container-mailcontact p-4">
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="inputemail001" class="form-label">Seu e-mail</label>
+                    <input type="email" class="form-control" id="inputemail001" aria-describedby="emailHelp" placeholder="Digite aqui o seu e-mail para contato.">
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label d-block">Assunto</label>
+                    <textarea name="subject" id="subject" class="p-2" placeholder="Digite aqui o motivo do seu contato."></textarea>
+                </div>
+                <button class="btn btn-success w-100 mb-3">Enviar</button>
+            </form>
+            <a href="mail:emaildecontato@gmail.com">emaildecontato@gmail.com</a>
+        </div>
+        <div class="container-certificates border-gradient-footer">
+            <h4>Certificados</h4>
+            <ul type="none">
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+            </ul>
+        </div>
+        <div class="container-collaborations p-4">
+            <h4>Experiências</h4>
+            <ul type="none">
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+            </ul>
+        </div>
+        <div class="container-social p-4">
+            <h4>Redes Sociais</h4>
+            <ul type="none">
+                <li><a href="#" target="_blank">a</a></li>
+                <li><a href="#" target="_blank">a</a></li>
+                <li><a href="#" target="_blank">a</a></li>
+            </ul>
+            <p>© 2025 Nycolas Roberto</p>
+        </div>
+    </footer>
+    <script src="assets/js/p5_animation.js"></script> <!-- p5 animation -->
+    <script src="assets/js/radar_shart.js"></script> <!-- radar shart -->
 </body>
 </html>
